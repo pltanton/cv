@@ -1,0 +1,179 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.3 (29/10/16)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com) with modifications by:
+% Vel (vel@latextemplates.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same 
+% directory as this .tex file. These files provide the resume style and themes 
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+
+\moderncvstyle{casual} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+
+\usepackage[scale=0.75]{geometry} % Reduce document margins
+%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\firstname{Anton} % Your first name
+\familyname{Plotnikov} % Your last name
+
+% All information in this block is optional, comment out any lines you don't need
+\mobile{+7 (999) 535 3556}
+\email{plotnikovanton@gmail.com}
+%\homepage{staff.org.edu/~jsmith}{staff.org.edu/$\sim$jsmith} % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
+%\extrainfo{github.com/pltanton}
+\photo[70pt][0.4pt]{pictures/picture} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+
+%----------------------------------------------------------------------------------------
+%	CURRICULUM VITAE
+%----------------------------------------------------------------------------------------
+
+\makecvtitle % Print the CV title
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+\cventry{2012--2016}{Bachelor of Applied Math and Computer Science}{ITMO
+University (Saint Petersburg National Research University of Information
+Technologies, Mechanics and Optics)}{}{}{Department of Mathematics}
+
+\cventry{}{Bachelor thesis}{}{}{}{<<Symplectic method of integrating
+Landau-Lifshitz equation>>}
+
+\cventry{2016--...}{Masters of Applied Math and Computer Science}{ITMO
+University}{}{}{Department of Mathematics}
+
+\subsection{Self-education}
+
+\cventry{Courses}{stepic.org}{}{}{}{
+    \begin{itemize}
+        \item Programming on C++
+        \item Algorithms and data structures
+        \item Programming on Python
+        \item Introduction to Linux
+        \item Java. Basic course
+        \item Functional programming on Haskell
+    \end{itemize}
+}
+
+\cventry{}{coursera.org}{}{}{}{
+    \begin{itemize}
+        \item Documents and presentations in \LaTeX
+    \end{itemize}
+}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Experience}
+
+\subsection{Vocational}
+
+\cventry{2016--Present}{Developer}{\textsc{T-Systems CIS}}{Saint Petersburg}{}{
+    Developing web micro services based on `\texttt{Ruby on Rails}` framework
+    and `\texttt{Pl/SQL}`. `\texttt{Java EE}` development.
+}
+
+%------------------------------------------------
+
+\subsection{Miscellaneous}
+
+\cventry{2016}{Lectorer}{MMSH}{Krasnoyarsk-9}{Children's Summer School}{
+    Lectured about competitive programming on `\texttt{Python}` and some
+    natural science.
+}
+
+%------------------------------------------------
+
+\subsection{Programming}
+
+\cventry{Java}{SoulsCube}{Side Scroller game, where you can switch between
+hero and his cube to solve puzzles}{}{}{LibGDX and Box2D}
+
+\cventry{}{NeercGame}{Platformer where you need to catch bugs on each different
+level with history of Neerc contests, dedicated to Neerc anniversary}{}{}{LibGDX and Box2D}
+
+\cventry{Lua}{Awesome WM}{highly configurable, next generation framework window
+    manager for X server based systems}{}{}{Contribution for some open source project
+related to it on github, own project, called <<net-widgets>>.}
+
+\cventry{C++}{Archiving program}{Huffman algorithm implementation}{}{}{}
+
+\cventry{GIT}{Each project could be found in my repositories}{}{}{}{
+    \begin{itemize}
+        \item \url{http://github.com/pltanton}
+        \item \url{http://bitbucket.org/pltanton}
+    \end{itemize}
+}
+
+%----------------------------------------------------------------------------------------
+%	PROGRAMMING LANGUAGES
+%----------------------------------------------------------------------------------------
+
+\section{Programming languages and technologies}
+
+\cvitem{Basic}{\textsc{PROLOG}, \textsc{Qt}, \textsc{GTK+}, \textsc{PHP},
+\textsc{Basic}, \textsc{Dark Basic}}
+\cvitem{Intermediate}{\textsc{python}, \textsc{html}, \LaTeX,
+\textsc{JavaScript}, \textsc{CoffeeScript}, \textsc{Oralce DB},
+\textsc{PostgreSQL}, \textsc{C++}, \textsc{Bash}, \textsc{Haskell}}
+\cvitem{Advanced}{\textsc{JAVA}, \textsc{Ruby}, \textsc{Ruby on Rails}}
+
+%----------------------------------------------------------------------------------------
+%	LANGUAGES SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Languages}
+
+\cvitemwithcomment{Russian}{Mothertongue}{}
+\cvitemwithcomment{English}{Intermediate}{}
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Interests}
+
+\renewcommand{\listitemsymbol}{-~} % Changes the symbol used for lists
+
+\cvlistdoubleitem{Tracking}{Linux}
+\cvlistdoubleitem{Astronomy}{Cooking}
+\cvlistitem{Tea}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
