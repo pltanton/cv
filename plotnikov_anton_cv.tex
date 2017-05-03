@@ -1,0 +1,150 @@
+\documentclass{cv}
+
+\begin{document}
+
+\cvheading{Anton Plotnikov}
+
+\section{Personal information}
+
+\entry{email}{\href{mailto:plotnikovanton@gmail.com}{plotnikovanton@gmail.com}}
+
+\entry{phone}{+7 (999) 535 3556}
+
+\entry{location}{Saint Petersburg, Russia}
+
+\entry{github}{\href{https://github.com/pltanton}{github.com/pltanton}}
+
+\section{Experience}
+
+\begin{cvblock}{%
+  \blocktitle{T-Systems RUS}{St.~Petersburg}{Software engeneer}{2016--Present}}
+
+  Developing web micro services based on \textsc{Ruby on Rails} framework and
+  \textsc{Pl/SQL}. Java development.
+
+  \begin{itemize}
+    \item \textsc{WiNA} (Dec 2016--Present):
+      A system that stores operational network data on \textsc{GSM},
+      \textsc{UMTS}, etc.\ of T-Mobile Deutschland and the relevant data of
+      network components.
+      \begin{itemize}
+        \item Technologies: \textsc{PL/SQL}, \textsc{CentOS}, \textsc{Oracle}
+        \item Responsibilities: improving error handling inside \textsc{PL/SQL}
+          scripts, performing database optimizations
+      \end{itemize}
+
+    \item \textsc{CenTr@} (Jun 2016--Present):
+      An internal only-API service that gathers data on T-Systems RUS employees
+      from different sources (\textsc{SAP}, corporate Active Directory,
+      internal navigation system etc.), then processes and clears it out, and
+      then provides flexible means for client systems to retrieve necessary
+      data on demand
+      \begin{itemize}
+        \item Technologies: \textsc{Ruby on Rails}, \textsc{MySql},
+          \textsc{Ubuntu}
+        \item Responsibilities: backend development, production server
+          environment administration, deployment scripts administration,
+          automatic Vagrant environment configuration
+      \end{itemize}
+
+    \item \textsc{ExTr@} (Apr 2016--Present):
+      An internal system that enables managerial personnel to track overtime
+      and (extra-)events of T-Systems RUS employees and then build reports and
+      employment forecasts
+      \begin{itemize}
+        \item Technologies: \textsc{Ruby on Rails}, \textsc{PL/SQL},
+          \textsc{CentOS}
+        \item Responsibilities: database planning, full-stack development,
+          deployment configuration, database administration, automatic Vagrant
+          environment configuration
+      \end{itemize}
+
+    \item \textsc{Calend@r} (Dec 2016--Present):
+      An internal system that synchronizes a free-busy status from different
+      Microsoft Exchange servers and builds a human readable comparison time
+      table
+      \begin{itemize}
+        \item Technologies: \textsc{Sinatra}, \textsc{CoffeeScript},
+          \textsc{Ubuntu}
+        \item Responsibilities: production server administration, deployment
+          configuration, full-stack development, automatic Vagrant environment
+          configuration
+      \end{itemize}
+    \item \textsc{Gogs} (Mar 2017--Present):
+      Administrating of Gogs local GIT service in CentOS environment. Related
+      SSL, Nginx, smtp configuration and LDAP integration
+
+  \end{itemize}
+\end{cvblock}
+
+\vspace{2em}
+
+\begin{cvblock}{Open source}
+  \begin{itemize}
+    \item \textsc{Network Widgets}
+      (\url{https://github.com/pltanton/net_widgets}):
+			a bunch of widgets, which indicates state of current network connection
+      without NetworkManager dependency written on \textsc{LUA} for
+      \textsc{awesome} window manager
+    \item \textsc{YAGS}
+      (\url{https://github.com/pltanton/yags}):
+      This program provides a simple configurable satatusline generator. It
+      passes the formatted status line each time when callbacks from plugging
+      is received. Unlike conky, yags prints satatusline only when status
+      really changed and not overloads disk with useless executions. Written on
+      \textsc{GO}
+
+  \end{itemize}
+\end{cvblock}
+
+\section{Technology stack}
+
+\begin{cvblock}{Advanced}
+  Ruby, Java
+\end{cvblock}
+
+\begin{cvblock}{Intermediate}
+  Go, Python, C++, Haskell, C, \LaTeX, JavaScript
+\end{cvblock}
+
+\begin{cvblock}{Basic}
+  Bash
+\end{cvblock}
+
+\section{Education}
+
+\begin{cvblock}{%
+  \blocktitle
+    {ITMO University}
+    {St.~Petersburg}
+    {}
+    {2016--Present}}
+  Chair of Advanced Mathematics. Mathematical modeling.
+  \vspace{1em}
+
+  \textit{Master of Applied Math and Computer Science.}
+\end{cvblock}
+
+\begin{cvblock}{%
+  \blocktitle
+    {ITMO University}
+    {St.~Petersburg}
+    {}
+    {2012--2016}}
+  Chair of Advanced Mathematics. Mathematical modeling.
+  \vspace{1em}
+
+  \textit{Bachelor of Applied Math and Computer Science.}
+\end{cvblock}
+
+\section{Languages}
+
+\begin{cvblock}{Russian}
+  Native
+\end{cvblock}
+
+\begin{cvblock}{English}
+  Intermediate
+\end{cvblock}
+
+\end{document}
