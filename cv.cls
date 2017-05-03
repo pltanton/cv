@@ -1,6 +1,8 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{cv}
 
+\renewcommand{\familydefault}{\sfdefault}
+
 \LoadClass{article}
 \RequirePackage{titlesec}
 \RequirePackage{textcase}
