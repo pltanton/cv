@@ -1,5 +1,8 @@
 \documentclass{cv}
 
+\usepackage{datetime}
+\newdateformat{monthyear}{\monthname[\THEMONTH], \THEYEAR}
+
 \begin{document}
 
 \cvheading{Anton Plotnikov}
@@ -153,5 +156,10 @@
 \begin{cvblock}{English}
   Intermediate
 \end{cvblock}
+
+\vfill
+\begin{center}
+  \monthyear\today
+\end{center}
 
 \end{document}
