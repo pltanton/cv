@@ -6,6 +6,7 @@
 
 \begin{document}
 
+\iftrue
 \cvheading{Anton Plotnikov}
 
 \section{Personal information}
@@ -17,12 +18,13 @@
 \entry{location}{Saint Petersburg, Russia}
 
 \entry{github}{\href{https://github.com/pltanton}{github.com/pltanton}}
+\fi
 
 
 \section{Key technologies}
 
 \begin{cvblock}{I}
-  Java/Kotlin, Ruby, Linux, Docker
+  Java/Kotlin/Spring, Ruby, Linux, Docker
 \end{cvblock}
 
 \begin{cvblock}{II}
@@ -37,11 +39,17 @@
 \section{Experience}
 
 \begin{cvblock}{%
-  \blocktitle{DSX Technologies}{St.~Petersburg}{Software engineer}{2018--present}}
+  \blocktitle{DSX Technologies}{St.~Petersburg}{Software engineer}{2018--2020}}
 
   Development of cryptocurrency exchange/trade platform.
 
   \begin{itemize}
+    \item \textbf{NPS/Spike money}: Payment system.
+      \begin{itemize}
+        \item Technologies: Java, Spring Boot.
+        \item Responsibilities: developement of platform backend.
+          Design and development of API.
+      \end{itemize}
     \item \textbf{DSX}: Trade and exchange platform.
       \begin{itemize}
         \item Technologies: Kotlin, Java, Angular (administration site for support/aml team), Docker.
@@ -70,9 +78,9 @@
   system and workflow processes.
 
   \begin{itemize}
-    \item \textbf{Releng}: Release registration system, which includes system itself
-      (build registration, release/upgrade notes automatic generation,
-      integration Jira plugin, clients to support CI by Teamcity).
+    \item \textbf{Releng}: Automatic release registration system
+      (build registration, release/upgrade notes reports, Jira plugin,
+      support CI by Teamcity).
       \begin{itemize}
         \item Technologies: Kotlin, Java, Python, Docker, Jira, Teamcity
         \item Responsibilities: support and developing system itself,
@@ -93,50 +101,31 @@
 \begin{cvblock}{%
   \blocktitle{T-Systems RUS}{St.~Petersburg}{Software engineer}{2016--2017}}
 
-  Developing web micro services based on Ruby on Rails framework and PL/SQL\@.
+  Developing web micro services mostly based on Ruby on Rails framework and PL/SQL\@.
   Java development.
 
   \begin{itemize}
-    \item \textbf{WiNA}:
+    \item \textbf{WiNA} [PL/SQL, Oracle]:
       A system that stores operational network data on GSM,
       UMTS, etc.\ of T-Mobile Deutschland and the relevant data of
-      network components. \textit{Technologies}: PL/SQL, CentOS, Oracle.
-      \textit{Responsibilities}: improving error handling inside PL/SQL scripts,
-      performing database optimizations
+      network components.
 
-    \item \textbf{CenTr@}:
+    \item \textbf{CenTr@} [Ruby on Rails, MySql]:
       An internal only-API service that gathers data on T-Systems RUS employees
       from different sources (SAP, corporate Active Directory,
       internal navigation system etc.), then processes and clears it out, and
       then provides flexible means for client systems to retrieve necessary
-      data on demand. \textit{Technologies}: Ruby on Rails, MySql, Ubuntu.
-      \textit{Responsibilities}: backend development, production server
-      environment administration, deployment scripts administration,
-      automatic Vagrant environment configuration
+      data on demand.
 
-    \item \textbf{ExTr@}:
+    \item \textbf{ExTr@} [Ruby on Rails, PL/SQL]:
       An internal system that enables managerial personnel to track overtime
       and (extra-)events of T-Systems RUS employees and then build reports and
       employment forecasts.
-      \textit{Technologies}: Ruby on Rails, PL/SQL, CentOS
-      \textit{Responsibilities}: database planning, full-stack development,
-      deployment configuration, database administration, automatic Vagrant
-      environment configuration
 
-\end{itemize}\end{cvblock}\begin{cvblock}{}\begin{itemize}
-
-    \item \textbf{Calend@r}:
+    \item \textbf{Calend@r} [Sinatra, CoffeeScript]:
       An internal system that synchronizes a free-busy status from different
       Microsoft Exchange servers and builds a human readable comparison time
-      table
-      \textit{Technologies}: Sinatra, CoffeeScript, Ubuntu
-      \textit{Responsibilities}: production server administration, deployment
-      configuration, full-stack development, automatic Vagrant environment
-      configuration
-    \item \textbf{Gogs}:
-      Administrating of Gogs local GIT service in CentOS environment. Related
-      SSL, Nginx, smtp configuration and LDAP integration
-
+      table.
   \end{itemize}
 \end{cvblock}
 
