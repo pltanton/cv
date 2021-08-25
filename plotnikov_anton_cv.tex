@@ -7,197 +7,209 @@
 \begin{document}
 
 \iftrue
-\cvheading{Anton Plotnikov}
+	\cvheading{Anton Plotnikov}
 
-\section{Personal information}
+	\section{Personal information}
 
-\entry{email}{\href{mailto:plotnikovanton@gmail.com}{plotnikovanton@gmail.com}}
+	\entry{email}{\href{mailto:plotnikovanton@gmail.com}{plotnikovanton@gmail.com}}
 
-\entry{telegram}{\href{https://t.me/pltanton}{@pltanton}}
+	\entry{telegram}{\href{https://t.me/pltanton}{@pltanton}}
 
-\entry{location}{Saint Petersburg, Russia}
+	\entry{location}{Saint Petersburg, Russia}
 
-\entry{github}{\href{https://github.com/pltanton}{github.com/pltanton}}
+	\entry{github}{\href{https://github.com/pltanton}{github.com/pltanton}}
 \fi
 
 
 \section{Key technologies}
 
 \begin{cvblock}{I}
-  Java/Kotlin/Spring, Ruby, Linux, Docker
+	Java/Kotlin/Spring, Ruby, Linux, Docker
 \end{cvblock}
 
 \begin{cvblock}{II}
-  Go, Python, React.js, Haskell, \LaTeX, Nix (NixOS), JavaScript, TypeScript, k8s
+	Go, Python, React.js, Haskell, \LaTeX, Nix (NixOS), JavaScript, TypeScript, k8s
 \end{cvblock}
 
 \begin{cvblock}{III}
-  Bash, C++, C
+	Bash, C++, C
 \end{cvblock}
 
 
 \section{Experience}
 
 \begin{cvblock}{%
-  \blocktitle{DSX Technologies}{St.~Petersburg}{Software engineer}{2018--2020}}
+		\blocktitle{Intellectokids}{Remote}{Software engineer}{2020--}}
 
-  Development of cryptocurrency exchange/trade platform.
+	Development of backend for kid's education platform.
 
-  \begin{itemize}
-    \item \textbf{NPS/Spike money}: Payment system.
-      \begin{itemize}
-        \item Technologies: Java, Spring Boot.
-        \item Responsibilities: developement of platform backend.
-          Design and development of API.
-      \end{itemize}
-    \item \textbf{DSX}: Trade and exchange platform.
-      \begin{itemize}
-        \item Technologies: Kotlin, Java, Angular (administration site for support/aml team), Docker.
-        \item Responsibilities: developement of platform backend, including:
-          kyc/kyb system, exchange api, public UI api, authentication process,
-          database and application design for clients personal data.
-      \end{itemize}
-    \item \textbf{Student projects}: Mentoring of student projects.
-      \begin{itemize}
-        \item Java subtyping system: project to provide solution to make additional
-          subtyping checks for Java primitives in non-runtime via annotation processing.
-        \item Rhea: library for dynamically and reactively reload configuration properties
-          by changes in properties sources (file, database, vault, e.t.c). Based on
-          Kotlin flow.
-      \end{itemize}
-    \item \textbf{DSXT Hackathon}: Participating in organisation and mentoring.
-  \end{itemize}
+	\begin{itemize}
+		\item \textbf{Infrastructure}: AWS based infrastructure.
+		      \begin{itemize}
+			      \item Technologies: AWS stack (Fargate, Glue, Lambda, etc).
+			      \item Responsibilities: development and support of AWS-based infrastructure. Migration from GCP to AWS.
+		      \end{itemize}
+		\item \textbf{Backend}.
+		      \begin{itemize}
+			      \item Technologies: Go (AWS Lambda), Kotlin (Spring boot), Spring, MongoDB (DocumentDB), DynamoDB, Postgres, Redshift.
+			      \item Responsibilities: developement and maintain micro-services based system and lambda-based systems. Business domains:
+			            user data, analytic, authorization/authentication, deal offering, payment.
+		      \end{itemize}
+	\end{itemize}
 \end{cvblock}
-
-\vspace{2em}
 
 \begin{cvblock}{%
-  \blocktitle{Openway}{St.~Petersburg}{Software engineer}{2017--2018}}
+		\blocktitle{DSX Technologies}{St.~Petersburg}{Software engineer}{2018--2020}}
 
-  Developing infrastructure components for build registration
-  system and workflow processes.
+	Development of cryptocurrency exchange/trade platform.
 
-  \begin{itemize}
-    \item \textbf{Releng}: Automatic release registration system
-      (build registration, release/upgrade notes reports, Jira plugin,
-      support CI by Teamcity).
-      \begin{itemize}
-        \item Technologies: Kotlin, Java, Python, Docker, Jira, Teamcity
-        \item Responsibilities: support and developing system itself,
-          building and planning architecture of some components.
-      \end{itemize}
-    \item \textbf{DMS}: Distribution management system. System to store and distribute
-      business specific products builds with theirs release/upgrade notes.
-      \begin{itemize}
-        \item Technologies: Kotlin, Docker, Spring, React.js
-        \item Responsibilities: support and developing system. Developing web
-          UI service for access to client/release notes.
-      \end{itemize}
-  \end{itemize}
+	\begin{itemize}
+		\item \textbf{NPS/Spike money}: Payment system.
+		      \begin{itemize}
+			      \item Technologies: Java, Spring Boot.
+			      \item Responsibilities: developement of platform backend.
+			            Design and development of API.
+		      \end{itemize}
+		\item \textbf{DSX}: Trade and exchange platform.
+		      \begin{itemize}
+			      \item Technologies: Kotlin, Java, Angular (administration site for support/aml team), Docker.
+			      \item Responsibilities: developement of platform backend, including:
+			            kyc/kyb system, exchange api, public UI api, authentication process,
+			            database and application design for clients personal data.
+		      \end{itemize}
+		\item \textbf{Student projects}: Mentoring of student projects.
+		      \begin{itemize}
+			      \item Java subtyping system: project to provide solution to make additional
+			            subtyping checks for Java primitives in non-runtime via annotation processing.
+			      \item Rhea: library for dynamically and reactively reload configuration properties
+			            by changes in properties sources (file, database, vault, e.t.c). Based on
+			            Kotlin flow.
+		      \end{itemize}
+		\item \textbf{DSXT Hackathon}: Participating in organisation and mentoring.
+	\end{itemize}
 \end{cvblock}
-
-\vspace{2em}
 
 \begin{cvblock}{%
-  \blocktitle{T-Systems RUS}{St.~Petersburg}{Software engineer}{2016--2017}}
+		\blocktitle{Openway}{St.~Petersburg}{Software engineer}{2017--2018}}
 
-  Developing web micro services mostly based on Ruby on Rails framework and PL/SQL\@.
-  Java development.
+	Developing infrastructure components for build registration
+	system and workflow processes.
 
-  \begin{itemize}
-    \item \textbf{WiNA} [PL/SQL, Oracle]:
-      A system that stores operational network data on GSM,
-      UMTS, etc.\ of T-Mobile Deutschland and the relevant data of
-      network components.
-
-    \item \textbf{CenTr@} [Ruby on Rails, MySql]:
-      An internal only-API service that gathers data on T-Systems RUS employees
-      from different sources (SAP, corporate Active Directory,
-      internal navigation system etc.), then processes and clears it out, and
-      then provides flexible means for client systems to retrieve necessary
-      data on demand.
-
-    \item \textbf{ExTr@} [Ruby on Rails, PL/SQL]:
-      An internal system that enables managerial personnel to track overtime
-      and (extra-)events of T-Systems RUS employees and then build reports and
-      employment forecasts.
-
-    \item \textbf{Calend@r} [Sinatra, CoffeeScript]:
-      An internal system that synchronizes a free-busy status from different
-      Microsoft Exchange servers and builds a human readable comparison time
-      table.
-  \end{itemize}
+	\begin{itemize}
+		\item \textbf{Releng}: Automatic release registration system
+		      (build registration, release/upgrade notes reports, Jira plugin,
+		      support CI by Teamcity).
+		      \begin{itemize}
+			      \item Technologies: Kotlin, Java, Python, Docker, Jira, Teamcity
+			      \item Responsibilities: support and developing system itself,
+			            building and planning architecture of some components.
+		      \end{itemize}
+		\item \textbf{DMS}: Distribution management system. System to store and distribute
+		      business specific products builds with theirs release/upgrade notes.
+		      \begin{itemize}
+			      \item Technologies: Kotlin, Docker, Spring, React.js
+			      \item Responsibilities: support and developing system. Developing web
+			            UI service for access to client/release notes.
+		      \end{itemize}
+	\end{itemize}
 \end{cvblock}
 
-\vspace{2em}
+\begin{cvblock}{%
+		\blocktitle{T-Systems RUS}{St.~Petersburg}{Software engineer}{2016--2017}}
+
+	Developing web micro services mostly based on Ruby on Rails framework and PL/SQL\@.
+	Java development.
+
+	\begin{itemize}
+		\item \textbf{WiNA} [PL/SQL, Oracle]:
+		      A system that stores operational network data on GSM,
+		      UMTS, etc.\ of T-Mobile Deutschland and the relevant data of
+		      network components.
+
+		\item \textbf{CenTr@} [Ruby on Rails, MySql]:
+		      An internal only-API service that gathers data on T-Systems RUS employees
+		      from different sources (SAP, corporate Active Directory,
+		      internal navigation system etc.), then processes and clears it out, and
+		      then provides flexible means for client systems to retrieve necessary
+		      data on demand.
+
+		\item \textbf{ExTr@} [Ruby on Rails, PL/SQL]:
+		      An internal system that enables managerial personnel to track overtime
+		      and (extra-)events of T-Systems RUS employees and then build reports and
+		      employment forecasts.
+
+		\item \textbf{Calend@r} [Sinatra, CoffeeScript]:
+		      An internal system that synchronizes a free-busy status from different
+		      Microsoft Exchange servers and builds a human readable comparison time
+		      table.
+	\end{itemize}
+\end{cvblock}
 
 \begin{cvblock}{Open source}
-  \begin{itemize}
-    \item Network Widgets
-      (\url{https://github.com/pltanton/net_widgets}):
-                        a bunch of widgets, which indicates state of current network connection
-      without NetworkManager dependency written in LUA for
-      \textit{awesome} window manager
-    \item YAGS
-      (\url{https://github.com/pltanton/yags}):
-      this program provides a simple configurable statusline generator. It
-      passes the formatted status line each time when callbacks from plugging
-      is received. Unlike conky, yags prints satatusline only when status
-      really changed and not overloads disk with useless executions. Written in
-      GO
+	\begin{itemize}
+		\item Network Widgets
+		      (\url{https://github.com/pltanton/net_widgets}):
+		      a bunch of widgets, which indicates state of current network connection
+		      without NetworkManager dependency written in LUA for
+		      \textit{awesome} window manager
+		\item YAGS
+		      (\url{https://github.com/pltanton/yags}):
+		      this program provides a simple configurable statusline generator. It
+		      passes the formatted status line each time when callbacks from plugging
+		      is received. Unlike conky, yags prints satatusline only when status
+		      really changed and not overloads disk with useless executions. Written in
+		      GO
 
-  \end{itemize}
+	\end{itemize}
 \end{cvblock}
 
-\vspace{2em}
-
 \begin{cvblock}{Freelance projects}
-  \begin{itemize}
-    \item Ruby on Rails course for Geekbrains:
-      basic course of Ruby on Rails framework, designed for 8 lectures, which
-      includes presentation for lecturer and book with detailed course
-  \end{itemize}
+	\begin{itemize}
+		\item Ruby on Rails course for Geekbrains:
+		      basic course of Ruby on Rails framework, designed for 8 lectures, which
+		      includes presentation for lecturer and book with detailed course
+	\end{itemize}
 \end{cvblock}
 
 \section{Education}
 
 \begin{cvblock}{%
-  \blocktitle
-    {ITMO University}
-    {St.~Petersburg}
-    {}
-    {2016--2018}}
-  Chair of Advanced Mathematics. Mathematical modeling.
-  \vspace{1em}
+		\blocktitle
+		{ITMO University}
+		{St.~Petersburg}
+		{}
+		{2016--2018}}
+	Chair of Advanced Mathematics. Mathematical modeling.
+	\vspace{1em}
 
-  \textit{Master of Applied Math and Computer Science.}
+	\textit{Master of Applied Math and Computer Science.}
 \end{cvblock}
 
 \begin{cvblock}{%
-  \blocktitle
-    {ITMO University}
-    {St.~Petersburg}
-    {}
-    {2012--2016}}
-  Chair of Advanced Mathematics. Mathematical modeling.
-  \vspace{1em}
+		\blocktitle
+		{ITMO University}
+		{St.~Petersburg}
+		{}
+		{2012--2016}}
+	Chair of Advanced Mathematics. Mathematical modeling.
+	\vspace{1em}
 
-  \textit{Bachelor of Applied Math and Computer Science.}
+	\textit{Bachelor of Applied Math and Computer Science.}
 \end{cvblock}
 
 \section{Languages}
 
 \begin{cvblock}{Russian}
-  Native
+	Native
 \end{cvblock}
 
 \begin{cvblock}{English}
-  Intermediate
+	Intermediate
 \end{cvblock}
 
 \vfill
 \begin{center}
-  \monthyear\today
+	\monthyear\today
 \end{center}
 
 \end{document}

@@ -23,11 +23,11 @@
 
 % Format of section
 \titleformat{\section}{}{}{0em}{\bf\Large\MakeUppercase}
-\titlespacing{\section}{9em}{1em}{2em}
+\titlespacing{\section}{8em}{1em}{1em}
 
 % Block environment
 \newlength{\cvblockmargin}
-\setlength{\cvblockmargin}{4em}
+\setlength{\cvblockmargin}{3em}
 \newlength{\cvblocktitlewidth}
 \setlength{\cvblocktitlewidth}{0.2\textwidth}
 \newlength{\cvblockcontentwidth}
