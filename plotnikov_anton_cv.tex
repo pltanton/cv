@@ -15,7 +15,7 @@
 
 	\entry{telegram}{\href{https://t.me/pltanton}{@pltanton}}
 
-	\entry{location}{Saint Petersburg, Russia}
+	\entry{location}{Paphos, Cyprus}
 
 	\entry{github}{\href{https://github.com/pltanton}{github.com/pltanton}}
 \fi
@@ -24,29 +24,53 @@
 \section{Key technologies}
 
 \begin{cvblock}{I}
-	Go, Java/Kotlin/Spring, Linux, Docker, AWS
+	Go, Java/Kotlin/Spring, Linux, Docker, AWS, Git
 \end{cvblock}
 
 \begin{cvblock}{II}
-	Ruby, Python, React.js, Haskell, \LaTeX, Nix (NixOS), JS/TS, k8s
+	K8S, Kafka, Haskell, \LaTeX, Nix (NixOS), JS/TS
 \end{cvblock}
 
 \begin{cvblock}{III}
-	Bash, C++, C, Lua
+	Ruby, Haskell, Bash, C++, C, Lua
 \end{cvblock}
 
 
 \section{Experience}
 
 \begin{cvblock}{%
-		\blocktitle{Ozon Bank}{Saint-Petersburg}{Software engineer}{2021--}}
+		\blocktitle{NeoCrypto}{Saint-Petersburg}{Software engineer}{2022--}}
+
+	Development of a TON wallet and exchange platform aka @wallet
+
+	\begin{itemize}
+		\item \textbf{P2P exchange} [Kotlin, Postgres].
+
+					Development of P2P exchange platform.
+
+		\item \textbf{Event management system} [Go, Kafka, Postgres].
+
+					I designed and developed a system from scratch that manages and automatically
+					generates event artifacts for internal services using multiple programming
+					languages, including Go, Kotlin, JS, and Python.
+					The system stores these artifacts in a data lake/warehouse for further ETL processing.
+
+	\end{itemize}
+\end{cvblock}
+
+\begin{cvblock}{%
+		\blocktitle{Ozon Bank}{Saint-Petersburg}{Lead software engineer}{2021--2022}}
 
 	Development of a bank processing systems.
 
 	\begin{itemize}
 		\item \textbf{Processing} [Go, Postgres, ClickHouse, Kafka, K8S].
 
-					Developement of bank processing system.
+					Development of bank processing system: system design,
+					cryptography layer compatible with PCI DSS.
+
+					Mentoring inters.
+
 	\end{itemize}
 \end{cvblock}
 
@@ -73,12 +97,9 @@
 	Development of cryptocurrency exchange/trade platform.
 
 	\begin{itemize}
-		\item \textbf{NPS/Spike money} [Java, Spring Boot]: Payment system.
-
-		      Developement of platform backend. Design and development of API.
 		\item \textbf{DSX} [Kotlin, Java, Angular (administration site for support/aml team), Docker]: Trade and exchange platform.
 
-		      Developement of platform backend, including:
+		      Development of platform backend, including:
 		      kyc/kyb system, exchange api, public UI api, authentication process,
 		      database and application design for clients personal data.
 		\item \textbf{Student projects}: Mentoring of student projects.
