@@ -32,24 +32,24 @@
 \setlength{\cvblocktitlewidth}{0.2\textwidth}
 \newlength{\cvblockcontentwidth}
 \setlength{\cvblockcontentwidth}{%
-\textwidth - \cvblocktitlewidth - \cvblockmargin}
+	\textwidth - \cvblocktitlewidth - \cvblockmargin}
 
 \newlength{\cvcontentmargin}
 \setlength{\cvcontentmargin}{\cvblocktitlewidth + \cvblockmargin}
 
 \newenvironment{cvblock}[1]
 {%
-\begin{minipage}[t]{\cvblocktitlewidth}
-\begin{flushright}
-\large{#1}
-\end{flushright}
-\end{minipage}
-\hfill
-\begin{minipage}[t]{\cvblockcontentwidth}%
-}
-{%
-\end{minipage}
-\vspace{0.5em}
+	\begin{minipage}[t]{\cvblocktitlewidth}
+		\begin{flushright}
+			\large{#1}
+		\end{flushright}
+	\end{minipage}
+	\hfill
+	\begin{minipage}[t]{\cvblockcontentwidth}%
+		}
+		{%
+	\end{minipage}
+	\vspace{0.5em}
 }
 
 % Block title helper
@@ -60,44 +60,57 @@
 
 \newcommand{\blocktitle}[4]
 {%
-\begin{spacing}{1.3}
-\large
-\def\temp{#1}\ifx\temp\empty
-\else
-  #1\\
-\fi
-\def\temp{#2}\ifx\temp\empty
-\else
-  (#2)\\
-\fi
-\def\temp{#3}\ifx\temp\empty
-\else
-  \textit{#3}\\
-\fi
-\def\temp{#4}\ifx\temp\empty
-\else
-  {\normalsize#4}\\
-\fi
-\end{spacing}%
+	\begin{spacing}{1.3}
+		\large
+		\def\temp{#1}\ifx\temp\empty
+		\else
+			#1\\
+		\fi
+		\def\temp{#2}\ifx\temp\empty
+			\else
+			(#2)\\
+		\fi
+		\def\temp{#3}\ifx\temp\empty
+		\else
+			\textit{#3}\\
+		\fi
+		\def\temp{#4}\ifx\temp\empty
+			\else
+			{\normalsize#4}\\
+		\fi
+	\end{spacing}%
 }
 
 % Heading
 
 \newcommand{\cvheading}[1]{%
-{
-\hspace{\cvcontentmargin}
-\color{Maroon}
-\Huge
-\so{\MakeUppercase{#1}}
-\vspace{1em}
-}}
+	{
+			\hspace{\cvcontentmargin}
+			\color{Maroon}
+			\Huge
+			\so{\MakeUppercase{#1}}
+			\vspace{1em}
+		}}
 
 % Entry
 \newcommand{\entry}[2]{%
-\hspace{\cvcontentmargin}
-\begin{minipage}{0.1\textwidth}
-#1
-\end{minipage}
-#2
-\vspace{0.5em}
+	\hspace{\cvcontentmargin}
+	\begin{minipage}{1.2em}
+		\begin{center}
+			#1
+		\end{center}
+	\end{minipage}
+	\begin{minipage}{20em}
+		#2
+	\end{minipage}
+	\vspace{0.5em}
+}
+
+\newenvironment{cvpersonal}
+{%
+	\begin{center}
+		\begin{minipage}{0.5\textwidth}
+			}{%
+		\end{minipage}
+	\end{center}
 }

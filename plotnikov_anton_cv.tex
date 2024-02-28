@@ -2,23 +2,29 @@
 
 \usepackage{datetime}
 \usepackage[super]{nth}
+\usepackage{fontawesome5}
+
 \newdateformat{monthyear}{\monthname[\THEMONTH], \THEYEAR}
 
 \begin{document}
 
-\iftrue
-	\cvheading{Anton Plotnikov}
+\cvheading{Anton Plotnikov}
 
-	\section{Personal information}
+\section{Personal information}
 
-	\entry{email}{\href{mailto:plotnikovanton@gmail.com}{plotnikovanton@gmail.com}}
+\begin{center}
 
-	\entry{telegram}{\href{https://t.me/pltanton}{@pltanton}}
+	\entry{\faEnvelope}{\href{mailto:plotnikovanton@gmail.com}{plotnikovanton@gmail.com}}
 
-	\entry{location}{Paphos, Cyprus}
+	\entry{\faTelegramPlane}{\href{https://t.me/pltanton}{@pltanton}}
 
-	\entry{github}{\href{https://github.com/pltanton}{github.com/pltanton}}
-\fi
+	\entry{\faGithub*}{\href{https://github.com/pltanton}{github.com/pltanton}}
+
+	\entry{\faGlobe}{\href{https://pltanton.dev}{pltanton.dev}}
+
+	\entry{\faMapPin}{Paphos, Cyprus}
+
+\end{center}
 
 
 \section{Key technologies}
@@ -39,21 +45,21 @@
 \section{Experience}
 
 \begin{cvblock}{%
-		\blocktitle{NeoCrypto}{Saint-Petersburg}{Software engineer}{2022--}}
+		\blocktitle{Wallet}{Cyprus, Paphos}{Software engineer}{2022--}}
 
 	Development of a TON wallet and exchange platform aka @wallet
 
 	\begin{itemize}
 		\item \textbf{P2P exchange} [Kotlin, Postgres].
 
-					Development of P2P exchange platform.
+		      Development of P2P exchange platform, analytic system, kyc, accountnig.
 
 		\item \textbf{Event management system} [Go, Kafka, Postgres].
 
-					I designed and developed a system from scratch that manages and automatically
-					generates event artifacts for internal services using multiple programming
-					languages, including Go, Kotlin, JS, and Python.
-					The system stores these artifacts in a data lake/warehouse for further ETL processing.
+		      I designed and developed a system from scratch that manages and automatically
+		      generates event artifacts for internal services using multiple programming
+		      languages, including Go, Kotlin, JS, and Python.
+		      The system stores these artifacts in a data lake/warehouse for further ETL processing.
 
 	\end{itemize}
 \end{cvblock}
@@ -66,10 +72,10 @@
 	\begin{itemize}
 		\item \textbf{Processing} [Go, Postgres, ClickHouse, Kafka, K8S].
 
-					Development of bank processing system: system design,
-					cryptography layer compatible with PCI DSS.
+		      Development of bank processing system: system design,
+		      cryptography layer compatible with PCI DSS.
 
-					Mentoring inters.
+		      Mentoring inters.
 
 	\end{itemize}
 \end{cvblock}
