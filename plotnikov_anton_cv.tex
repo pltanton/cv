@@ -5,28 +5,34 @@
 \usepackage{datetime}
 \usepackage[super]{nth}
 \usepackage{fontawesome5}
+\usepackage{tikz}
+
 
 \newdateformat{monthyear}{\monthname[\THEMONTH], \THEYEAR}
 
 \begin{document}
 
-\cvheading{Anton Plotnikov}
+\noindent
+\begin{minipage}{5cm}
+	\begin{tikzpicture}
+		\clip (0,0) circle (2cm);
+		\node at (0,0) {\includegraphics[width=4cm]{portrait.jpg}};
+	\end{tikzpicture}%
+\end{minipage}
+\begin{minipage}{\textwidth - 6cm}
+	\cvheading{Anton Plotnikov}
 
-% \section{Personal information}
-
-\begin{center}
-
-	\entry{\faEnvelope}{\href{mailto:plotnikovanton@gmail.com}{plotnikovanton@gmail.com}}
-
-	\entry{\faTelegramPlane}{\href{https://t.me/pltanton}{@pltanton}}
-
-	\entry{\faGithub*}{\href{https://github.com/pltanton}{github.com/pltanton}}
-
-	\entry{\faGlobe}{\href{https://pltanton.dev}{pltanton.dev}}
-
-	\entry{\faMapPin}{Paphos, Cyprus}
-
-\end{center}
+	\begin{center}
+		\begin{tabular}{cl}
+			\faEnvelope      & \href{mailto:plotnikovanton@gmail.com}{plotnikovanton@gmail.com} \\
+			\faTelegramPlane & \href{https://t.me/pltanton}{@pltanton}                          \\
+			\faGithub*       & \href{https://github.com/pltanton}{github.com/pltanton}          \\
+			\faGlobe         & \href{https://pltanton.dev}{pltanton.dev}                        \\
+			\faMapPin        & Paphos, Cyprus
+		\end{tabular}
+	\end{center}
+\end{minipage}
+\vspace{2em}
 
 
 \section{Key technologies}

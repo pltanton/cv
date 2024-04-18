@@ -20,9 +20,11 @@
 
 \pagestyle{empty}
 
+\newlength{\titleoffset}
+\setlength{\titleoffset}{8em}
 % Format of section
 \titleformat{\section}{}{}{0em}{\bf\Large\MakeUppercase}
-\titlespacing{\section}{8em}{1em}{1em}
+\titlespacing{\section}{\titleoffset}{1em}{1em}
 
 % Block environment
 \newlength{\cvblockmargin}
@@ -82,18 +84,19 @@
 % Heading
 
 \newcommand{\cvheading}[1]{%
-	{
-			\hspace{\cvcontentmargin}
+	\begin{center}
+		{
 			\color{Maroon}
 			\Huge
 			\so{\MakeUppercase{#1}}
 			\vspace{0.7em}
-		}}
+		}
+	\end{center}
+}
 
 % Entry
 \newcommand{\entry}[2]{%
-	\hspace{\cvcontentmargin}
-	\begin{minipage}{1.2em}
+	\begin{minipage}{1.5em}
 		\begin{center}
 			#1
 		\end{center}
