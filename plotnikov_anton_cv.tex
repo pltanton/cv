@@ -1,3 +1,5 @@
+% !TeX root = plotnikov_anton_cv.tex
+
 \documentclass{cv}
 
 \usepackage{datetime}
@@ -10,7 +12,7 @@
 
 \cvheading{Anton Plotnikov}
 
-\section{Personal information}
+% \section{Personal information}
 
 \begin{center}
 
@@ -30,11 +32,11 @@
 \section{Key technologies}
 
 \begin{cvblock}{I}
-	Go, Java/Kotlin/Spring, Linux, Docker, AWS, Git
+	Go, Java/Kotlin/Spring, Linux, Docker, Kafka, Git
 \end{cvblock}
 
 \begin{cvblock}{II}
-	K8S, Kafka, Haskell, \LaTeX, Nix (NixOS), JS/TS
+	AWS, K8S, Nix (NixOS), Haskell, \LaTeX, JS/TS
 \end{cvblock}
 
 \begin{cvblock}{III}
@@ -44,10 +46,10 @@
 
 \section{Experience}
 
-\begin{cvblock}{%
+\begin{cvblock}{
 		\blocktitle{Wallet}{Cyprus, Paphos}{Software engineer}{2022--}}
 
-	Development of a TON wallet and exchange platform aka @wallet
+	Development of a TON wallet, exchange and trading platform aka Telegram's @wallet
 
 	\begin{itemize}
 		\item \textbf{P2P exchange} [Kotlin, Postgres].
@@ -56,10 +58,9 @@
 
 		\item \textbf{Event management system} [Go, Kafka, Postgres].
 
-		      I designed and developed a system from scratch that manages and automatically
-		      generates event artifacts for internal services using multiple programming
-		      languages, including Go, Kotlin, JS, and Python.
-		      The system stores these artifacts in a data lake/warehouse for further ETL processing.
+		      I designed and built a real-time, high-availability analytics system that enables
+		      business event definition management for automatic type-strict code generation
+		      in multiple programming languages.
 
 	\end{itemize}
 \end{cvblock}
@@ -109,13 +110,11 @@
 		      kyc/kyb system, exchange api, public UI api, authentication process,
 		      database and application design for clients personal data.
 		\item \textbf{Student projects}: Mentoring of student projects.
-		      \begin{itemize}
-			      \item Java subtyping system: project to provide solution to make additional
-			            subtyping checks for Java primitives in non-runtime via annotation processing.
-			      \item Rhea: library for dynamically and reactively reload configuration properties
-			            by changes in properties sources (file, database, vault, e.t.c). Based on
-			            Kotlin flow.
-		      \end{itemize}
+
+		      \emph{Subtyping system}: compile-time advanced extension for Java.
+
+		      \emph{Rhea}: library for reactiv reload of configuration properties with various data sources.
+
 		\item \textbf{DSXT Hackathon}: Participating in organisation and mentoring.
 	\end{itemize}
 \end{cvblock}
@@ -144,19 +143,19 @@
 
 \begin{cvblock}{Open source}
 	\begin{itemize}
+		\item Autobrowser
+		      (\url{https://github.com/pltanton/autobrowser}):
+		      an efficient cross-platform tool to automatically open hyperlincs in different
+		      browsers depending on context (target app, etc) with flexible and ease of use custom
+		      configuration DSL
+		\item DDC Sync
+		      (\url{https://github.com/pltanton/ddcsync}):
+		      an utility to synchronise brightness of monitors with multi-head setup by ddc protocol
 		\item Network Widgets
 		      (\url{https://github.com/pltanton/net_widgets}):
 		      a bunch of widgets, which indicates state of current network connection
 		      without NetworkManager dependency written in LUA for
 		      \textit{awesome} window manager
-		\item YAGS
-		      (\url{https://github.com/pltanton/yags}):
-		      this program provides a simple configurable statusline generator. It
-		      passes the formatted status line each time when callbacks from plugging
-		      is received. Unlike conky, yags prints satatusline only when status
-		      really changed and not overloads disk with useless executions. Written in
-		      GO
-
 	\end{itemize}
 \end{cvblock}
 
@@ -164,7 +163,7 @@
 	\begin{itemize}
 		\item Ruby on Rails course for Geekbrains:
 		      basic course of Ruby on Rails framework, designed for 8 lectures, which
-		      includes presentation for lecturer and book with detailed course
+		      includes presentation for a lecturer and a book with detailed course
 	\end{itemize}
 \end{cvblock}
 
@@ -175,23 +174,11 @@
 		{ITMO University}
 		{St.~Petersburg}
 		{}
-		{2016--2018}}
+		{2012--2018}}
 	Chair of Advanced Mathematics. Mathematical modeling.
 	\vspace{1em}
 
 	\textit{Master of Applied Math and Computer Science.}
-\end{cvblock}
-
-\begin{cvblock}{%
-		\blocktitle
-		{ITMO University}
-		{St.~Petersburg}
-		{}
-		{2012--2016}}
-	Chair of Advanced Mathematics. Mathematical modeling.
-	\vspace{1em}
-
-	\textit{Bachelor of Applied Math and Computer Science.}
 \end{cvblock}
 
 \section{Languages}

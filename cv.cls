@@ -16,8 +16,7 @@
 \RequirePackage{hyperref}
 \hypersetup{colorlinks, breaklinks, urlcolor=Maroon, linkcolor=Maroon}
 
-\RequirePackage[bottom=10mm,top=10mm,right=15mm,left=7mm,a4paper,dvips]
-{geometry}
+\RequirePackage[bottom=10mm,top=10mm,right=10mm,left=5mm,a4paper,dvips]{geometry}
 
 \pagestyle{empty}
 
@@ -29,7 +28,7 @@
 \newlength{\cvblockmargin}
 \setlength{\cvblockmargin}{3em}
 \newlength{\cvblocktitlewidth}
-\setlength{\cvblocktitlewidth}{0.2\textwidth}
+\setlength{\cvblocktitlewidth}{0.21\textwidth}
 \newlength{\cvblockcontentwidth}
 \setlength{\cvblockcontentwidth}{%
 	\textwidth - \cvblocktitlewidth - \cvblockmargin}
@@ -46,10 +45,9 @@
 	\end{minipage}
 	\hfill
 	\begin{minipage}[t]{\cvblockcontentwidth}%
-		}
-		{%
+		}{%
 	\end{minipage}
-	\vspace{0.5em}
+	\vspace{1em}
 }
 
 % Block title helper
@@ -89,7 +87,7 @@
 			\color{Maroon}
 			\Huge
 			\so{\MakeUppercase{#1}}
-			\vspace{1em}
+			\vspace{0.7em}
 		}}
 
 % Entry
