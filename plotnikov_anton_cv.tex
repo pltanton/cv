@@ -12,14 +12,19 @@
 
 \begin{document}
 
-\noindent
-\begin{minipage}{5cm}
+\sbox{0}{%
+	\hspace{1cm}
 	\begin{tikzpicture}
 		\clip (0,0) circle (2cm);
 		\node at (0,0) {\includegraphics[width=4cm]{portrait.jpg}};
 	\end{tikzpicture}%
+}
+
+\noindent
+\begin{minipage}{\dimexpr \wd0}
+	\usebox{0}
 \end{minipage}
-\begin{minipage}{\textwidth - 6cm}
+\begin{minipage}{\dimexpr \textwidth-\wd0-\columnsep}
 	\cvheading{Anton Plotnikov}
 
 	\begin{center}
@@ -32,6 +37,7 @@
 		\end{tabular}
 	\end{center}
 \end{minipage}
+
 \vspace{2em}
 
 

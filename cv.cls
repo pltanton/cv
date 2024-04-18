@@ -16,7 +16,7 @@
 \RequirePackage{hyperref}
 \hypersetup{colorlinks, breaklinks, urlcolor=Maroon, linkcolor=Maroon}
 
-\RequirePackage[bottom=10mm,top=10mm,right=10mm,left=5mm,a4paper,dvips]{geometry}
+\RequirePackage[bottom=10mm,top=10mm,right=10mm,left=10mm,a4paper,dvips]{geometry}
 
 \pagestyle{empty}
 
