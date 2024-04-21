@@ -64,11 +64,11 @@
 		\large
 		\def\temp{#1}\ifx\temp\empty
 		\else
-			#1\\
+			{\textbf{#1}}\\
 		\fi
 		\def\temp{#2}\ifx\temp\empty
 			\else
-			(#2)\\
+			{\small#2}\\
 		\fi
 		\def\temp{#3}\ifx\temp\empty
 		\else
@@ -76,7 +76,7 @@
 		\fi
 		\def\temp{#4}\ifx\temp\empty
 			\else
-			{\normalsize#4}\\
+			{\small#4}\\
 		\fi
 	\end{spacing}%
 }
