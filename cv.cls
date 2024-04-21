@@ -57,13 +57,12 @@
 % 2nd argument is Location
 % 3rd Position
 % 4th argument is Time period
-
 \newcommand{\blocktitle}[4]
 {%
 	\begin{spacing}{1.3}
 		\large
 		\def\temp{#1}\ifx\temp\empty
-		\else
+			\else
 			{\textbf{#1}}\\
 		\fi
 		\def\temp{#2}\ifx\temp\empty
@@ -82,8 +81,7 @@
 }
 
 % Heading
-
-\newcommand{\cvheading}[1]{%
+\newcommand{\cvheadingtitle}[1]{%
 	\begin{center}
 		{
 			\color{Maroon}
@@ -92,6 +90,29 @@
 			\vspace{0.7em}
 		}
 	\end{center}
+}
+
+% 1st argument is Title
+% 2nd argument is Picture
+% 3rd argument is Info block
+\newsavebox{\headimgbox}
+\newcommand{\cvheading}[3]{%
+	\sbox{\headimgbox}{%
+		\hspace{1cm}
+		#2
+	}
+
+	\noindent
+	\begin{minipage}{\dimexpr \wd\headimgbox}
+		\usebox{\headimgbox}
+	\end{minipage}
+	\begin{minipage}{\dimexpr \textwidth-\wd\headimgbox-\columnsep}
+		\cvheadingtitle{#1}
+
+		\begin{center}
+			#3
+		\end{center}
+	\end{minipage}
 }
 
 % Entry

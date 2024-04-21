@@ -7,36 +7,22 @@
 \usepackage{fontawesome5}
 \usepackage{tikz}
 
-
-\newdateformat{monthyear}{\monthname[\THEMONTH], \THEYEAR}
-
 \begin{document}
 
-\sbox{0}{%
-	\hspace{1cm}
+\cvheading{Anton Plotnikov}{%
 	\begin{tikzpicture}
 		\clip (0,0) circle (2cm);
 		\node at (0,0) {\includegraphics[width=4cm]{portrait.jpg}};
 	\end{tikzpicture}%
+}{%
+	\begin{tabular}{cl}
+		\faEnvelope      & \href{mailto:plotnikovanton@gmail.com}{plotnikovanton@gmail.com} \\
+		\faTelegramPlane & \href{https://t.me/pltanton}{@pltanton}                          \\
+		\faGithub*       & \href{https://github.com/pltanton}{github.com/pltanton}          \\
+		\faGlobe         & \href{https://pltanton.dev}{pltanton.dev}                        \\
+		\faMapPin        & Paphos, Cyprus
+	\end{tabular}%
 }
-
-\noindent
-\begin{minipage}{\dimexpr \wd0}
-	\usebox{0}
-\end{minipage}
-\begin{minipage}{\dimexpr \textwidth-\wd0-\columnsep}
-	\cvheading{Anton Plotnikov}
-
-	\begin{center}
-		\begin{tabular}{cl}
-			\faEnvelope      & \href{mailto:plotnikovanton@gmail.com}{plotnikovanton@gmail.com} \\
-			\faTelegramPlane & \href{https://t.me/pltanton}{@pltanton}                          \\
-			\faGithub*       & \href{https://github.com/pltanton}{github.com/pltanton}          \\
-			\faGlobe         & \href{https://pltanton.dev}{pltanton.dev}                        \\
-			\faMapPin        & Paphos, Cyprus
-		\end{tabular}
-	\end{center}
-\end{minipage}
 
 \vspace{2em}
 
@@ -94,23 +80,6 @@
 \end{cvblock}
 
 \begin{cvblock}{%
-		\blocktitle{Intellectokids}{Remote}{Software engineer}{2020--2021}}
-
-	Development of backend for kids education platform.
-
-	\begin{itemize}
-		\item \textbf{Infrastructure} [AWS(Fargate, Glue, Lambda, etc)]: AWS based infrastructure.
-
-		      Development and support of AWS-based infrastructure. Migration from GCP to AWS.
-
-		\item \textbf{Backend} [Go (AWS Lambda), Kotlin (Spring boot), Spring, MongoDB (DocumentDB), DynamoDB, Postgres, Redshift].
-
-		      Responsibilities: developement and maintain micro-services based system and lambda-based systems. Business domains:
-		      user data, analytic, authorization/authentication, deal offering, payment.
-	\end{itemize}
-\end{cvblock}
-
-\begin{cvblock}{%
 		\blocktitle{DSX Technologies}{St.~Petersburg}{Software engineer}{2018--2020}}
 
 	Development of cryptocurrency exchange/trade platform.
@@ -145,6 +114,24 @@
 		      business specific products builds with theirs release/upgrade notes.
 	\end{itemize}
 \end{cvblock}
+
+\begin{cvblock}{%
+		\blocktitle{Intellectokids}{Remote}{Software engineer}{2020--2021}}
+
+	Development of backend for kids education platform.
+
+	\begin{itemize}
+		\item \textbf{Infrastructure} [AWS(Fargate, Glue, Lambda, etc)]: AWS based infrastructure.
+
+		      Development and support of AWS-based infrastructure. Migration from GCP to AWS.
+
+		\item \textbf{Backend} [Go (AWS Lambda), Kotlin (Spring boot), Spring, MongoDB (DocumentDB), DynamoDB, Postgres, Redshift].
+
+		      Responsibilities: developement and maintain micro-services based system and lambda-based systems. Business domains:
+		      user data, analytic, authorization/authentication, deal offering, payment.
+	\end{itemize}
+\end{cvblock}
+
 
 \begin{cvblock}{%
 		\blocktitle{T-Systems RUS}{St.~Petersburg}{Intern}{2016--2017}}
@@ -204,6 +191,8 @@
 \end{cvblock}
 
 \vfill
+
+\newdateformat{monthyear}{\monthname[\THEMONTH], \THEYEAR}
 \begin{center}
 	\monthyear\today
 \end{center}
