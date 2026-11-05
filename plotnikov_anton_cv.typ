@@ -160,7 +160,7 @@
 ]
 
 #row[Own][
-  #link("https://github.com/pltanton/net_widgets")[net_widgets] (★176) ·
+  #link("https://github.com/pltanton/net_widgets")[net_widgets] ·
   #link("https://guided-review.pltanton.dev")[guided-review] ·
   #link("https://d2-live.pltanton.dev")[d2-live] ·
   #link("https://github.com/pltanton/autobrowser")[Autobrowser]
