@@ -90,7 +90,7 @@
     in multiple programming languages.
 ]
 
-#job[2021--2022][Ozon Bank][St. Petersburg][Lead software engineer][
+#job[2021--2022][Ozon Bank][St. Petersburg, Russia][Lead software engineer][
   Development of bank processing systems.
 
   - *Processing* [Go, Postgres, ClickHouse, Kafka, K8S].
@@ -102,7 +102,7 @@
   Backend and AWS infrastructure for a kids education platform (Go, Kotlin, AWS).
 ]
 
-#job[2018--2020][DSX Technologies][St. Petersburg][Software engineer][
+#job[2018--2020][DSX Technologies][St. Petersburg, Russia][Software engineer][
   Development of cryptocurrency exchange/trade platform.
 
   - *DSX* [Kotlin, Java, Angular, Docker]: trade and exchange platform.
@@ -118,7 +118,7 @@
   - *DSXT Hackathon*: participating in organisation and mentoring.
 ]
 
-#job[2017--2018][Openway][St. Petersburg][Software engineer][
+#job[2017--2018][Openway][St. Petersburg, Russia][Software engineer][
   Developing infrastructure components for build registration
   system and workflow processes.
 
@@ -130,7 +130,7 @@
     business-specific product builds with their release/upgrade notes.
 ]
 
-#job[2016--2017][T-Systems RUS][St. Petersburg][Intern][
+#job[2016--2017][T-Systems RUS][St. Petersburg, Russia][Intern][
   Full stack development of web micro-services mostly based on Ruby on Rails framework and PL/SQL.
   Java development. Technologies: PL/SQL, Oracle, Ruby on Rails, MySQL, Sinatra, CoffeeScript.
 ]
@@ -158,7 +158,7 @@
 
 = Education
 
-#job[2012--2018][ITMO University][St. Petersburg][Master of Applied Math and Computer Science][
+#job[2012--2018][ITMO University][St. Petersburg, Russia][Master of Applied Math and Computer Science][
   Chair of Advanced Mathematics. Mathematical modeling.
 ]
 
