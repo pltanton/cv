@@ -100,7 +100,7 @@
     Kotlin service template, shared Go libraries, Protobuf decoding for Kafbat,
     observability with OpenTelemetry and Pyroscope.
 
-  - *Data delivery* [Kafka, ClickHouse].
+  - *Data delivery* [Kotlin, Kafka, ClickHouse].
     I led the move to near-real-time CDC replication of service data into ClickHouse.
 
   - *Earlier work* [Kotlin, Go, Postgres, Kafka].
