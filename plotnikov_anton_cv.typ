@@ -158,8 +158,12 @@
 
 = Education
 
-#job[2012--2018][ITMO University][St. Petersburg, Russia][Master of Applied Math and Computer Science][
+#job[2016--2018][ITMO University][St. Petersburg, Russia][Master of Applied Math and Computer Science][
   Chair of Advanced Mathematics. Mathematical modeling.
+]
+
+#job[2012--2016][ITMO University][St. Petersburg, Russia][Bachelor of Applied Math and Computer Science][
+  Chair of Advanced Mathematics.
 ]
 
 #section[Languages][Russian · English · Greek]
