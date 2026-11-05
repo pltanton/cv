@@ -6,7 +6,9 @@
 #set document(title: "Anton Plotnikov CV", author: "Anton Plotnikov")
 #set page(paper: "a4", margin: (x: 14mm, y: 12mm))
 #set text(font: "Inter", size: 9.5pt)
-#set par(justify: true, leading: 0.6em)
+#set par(justify: false, leading: 0.65em, spacing: 0.65em)
+#set text(hyphenate: false)
+#show regex("\[[^\[\]]+\]"): set text(size: 8.5pt, fill: muted)
 #show link: set text(fill: accent)
 #set list(indent: 0.2em, spacing: 0.8em, marker: text(fill: accent, sym.bullet))
 
@@ -47,8 +49,8 @@
   text(size: 10.5pt, weight: "bold", company)
   if role != none [ · #emph(role)]
   h(0.6em)
-  text(size: 8pt, fill: muted, location)
-  if body != none { v(0.4em, weak: true); body }
+  box(text(size: 8pt, fill: muted, location))
+  if body != none { v(0.2em); body }
 })
 
 #grid(
@@ -72,22 +74,39 @@
 
 = Key technologies
 
-#row[I][Go, Java/Kotlin/Spring, Linux, Docker, Kafka, Git]
+#row[I][Go, Java/Kotlin/Spring, Postgres, Kafka, ClickHouse, Linux, Docker, Git]
 #row[II][AWS, K8S, Nix (NixOS), LaTeX, JS/TS]
 #row[III][Ruby, Python, Bash, C++, C, Lua, Haskell]
 
 = Experience
 
-#job[2026--][Wallet][Paphos, Cyprus][Engineering Team Lead, Transactions Platform][
-  Development of a TON wallet, exchange and trading platform aka Telegram's \@wallet.
+#job[2022--][Walt (formerly Telegram Wallet)][Paphos, Cyprus][Engineering Team Lead, Transactions Platform][
+  Senior software engineer from 2022, team lead from 2026: I lead the team
+  that owns the transaction core, from the ledger and processing to the data for analytics.
 
-  - *P2P exchange* [Kotlin, Postgres].
-    Development of P2P exchange platform, analytic system, KYC, accounting.
+  - *Ledger* [Kotlin, Postgres, Kafka].
+    I designed and built a new high-performance ledger service.
+    I moved all accounts and the full transaction history out of the main monolith
+    with zero downtime: historical migration, dual run, reverse replication and continuous reconciliation.
+    The ledger is now the single source of truth for balances, with double-entry postings.
 
-  - *Event management system* [Go, Kafka, Postgres].
-    I designed and built a real-time, high-availability analytics system that enables
-    business event definition management for automatic type-strict code generation
-    in multiple programming languages.
+  - *Processing service* [Go, Postgres, Kafka].
+    I led the design and implementation of the central processing service.
+    Each process runs as an explicit state machine. The service is high-performance,
+    fault-tolerant and redundant across data centers.
+
+  - *Platform*.
+    I designed the Kafka event protocol and built the Kafka client library that most services use.
+    Kotlin service template, shared Go libraries, Protobuf decoding for Kafbat,
+    observability with OpenTelemetry and Pyroscope.
+
+  - *Data delivery* [Kafka, ClickHouse].
+    I led the move to near-real-time CDC replication of service data into ClickHouse.
+
+  - *Earlier work* [Kotlin, Go, Postgres, Kafka].
+    P2P exchange, accounting service, integration with a third-party KYC provider.
+    Event management system: a real-time layer that delivers business events
+    from services and the frontend to the data warehouse.
 ]
 
 #job[2021--2022][Ozon Bank][St. Petersburg, Russia][Lead software engineer][
@@ -103,19 +122,14 @@
 ]
 
 #job[2018--2020][DSX Technologies][St. Petersburg, Russia][Software engineer][
-  Development of cryptocurrency exchange/trade platform.
+  Cryptocurrency exchange and trading platform.
 
-  - *DSX* [Kotlin, Java, Angular, Docker]: trade and exchange platform.
-    Development of platform backend, including:
-    KYC/KYB system, exchange API, public UI API, authentication process,
-    database and application design for clients' personal data;
-    administration site for the support/AML team.
+  - *Exchange backend* [Kotlin, Java, Docker].
+    KYC/KYB system, exchange and public APIs, authentication,
+    storage design for clients' personal data, admin site for the support and AML team.
 
-  - *Student projects*: mentoring of student projects.
-    _Subtyping system_: compile-time advanced extension for Java.
-    _Rhea_: library for reactive reload of configuration properties with various data sources.
-
-  - *DSXT Hackathon*: participating in organisation and mentoring.
+  - *Mentoring*. Student projects: a compile-time subtyping extension for Java,
+    a library for live reload of configuration. Organizer and mentor of the DSXT hackathon.
 ]
 
 #job[2017--2018][Openway][St. Petersburg, Russia][Software engineer][
@@ -137,23 +151,19 @@
 
 = Projects
 
-#row[Open source][
-  - *Autobrowser* (#link("https://github.com/pltanton/autobrowser")[github.com/pltanton/autobrowser]):
-    an efficient cross-platform tool to automatically open hyperlinks in different
-    browsers depending on context (target app, etc.) with a flexible and easy-to-use custom
-    configuration DSL.
-  - *DDC Sync* (#link("https://github.com/pltanton/ddcsync")[github.com/pltanton/ddcsync]):
-    a utility to synchronise brightness of monitors in a multi-head setup by DDC protocol.
-  - *Network Widgets* (#link("https://github.com/pltanton/net_widgets")[github.com/pltanton/net_widgets]):
-    a bunch of widgets which indicate the state of the current network connection
-    without NetworkManager dependency, written in Lua for the
-    _awesome_ window manager.
+#row[Contributed][
+  #link("https://github.com/torvalds/linux")[Linux kernel] ·
+  #link("https://github.com/kafbat/kafka-ui")[Kafbat UI] ·
+  #link("https://github.com/NixOS/nixpkgs")[Nixpkgs] ·
+  #link("https://github.com/nix-community/home-manager")[Home Manager] ·
+  #link("https://github.com/OmniNull/OmniWM")[OmniWM]
 ]
 
-#row[Freelance][
-  - *Ruby on Rails course for Geekbrains*:
-    basic course of Ruby on Rails framework, designed for 8 lectures, which
-    includes a presentation for a lecturer and a book with detailed course.
+#row[Own][
+  #link("https://github.com/pltanton/net_widgets")[net_widgets] (★176) ·
+  #link("https://guided-review.pltanton.dev")[guided-review] ·
+  #link("https://d2-live.pltanton.dev")[d2-live] ·
+  #link("https://github.com/pltanton/autobrowser")[Autobrowser]
 ]
 
 = Education
