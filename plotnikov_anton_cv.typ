@@ -53,30 +53,23 @@
   if body != none { v(0.2em); body }
 })
 
-#grid(
-  columns: (auto, 1fr),
-  column-gutter: 8mm,
-  align: horizon,
-  box(clip: true, radius: 50%, image("portrait.jpg", width: 3cm, height: 3cm)),
-  [
-    #text(font: "Inter Display", size: 24pt, weight: "semibold", fill: accent, tracking: 0.18em, upper[Anton Plotnikov])
-    #v(0.8em, weak: true)
-    #text(size: 11pt, fill: muted)[Engineering Team Lead, Transactions Platform · Paphos, Cyprus]
-    #v(1em, weak: true)
-    #set text(size: 8.5pt)
-    #let sep = h(1.2em)
-    #fa(0xf0e0) #link("mailto:plotnikovanton@gmail.com")[plotnikovanton\@gmail.com] #sep
-    #fa(0xf2c6, brand: true) #link("https://t.me/pltanton")[\@pltanton] #sep
-    #fa(0xf09b, brand: true) #link("https://github.com/pltanton")[github.com/pltanton] #sep
-    #fa(0xf0ac) #link("https://pltanton.dev")[pltanton.dev]
-  ],
-)
+#block[
+  #text(font: "Inter Display", size: 24pt, weight: "semibold", fill: accent, tracking: 0.18em, upper[Anton Plotnikov])
+  #v(0.8em, weak: true)
+  #text(size: 11pt, fill: muted)[Engineering Team Lead, Transactions Platform · Paphos, Cyprus]
+  #v(1em, weak: true)
+  #set text(size: 8.5pt)
+  #let sep = h(1.2em)
+  #fa(0xf0e0) #link("mailto:plotnikovanton@gmail.com")[plotnikovanton\@gmail.com] #sep
+  #fa(0xf2c6, brand: true) #link("https://t.me/pltanton")[\@pltanton] #sep
+  #fa(0xf09b, brand: true) #link("https://github.com/pltanton")[github.com/pltanton] #sep
+  #fa(0xf0ac) #link("https://pltanton.dev")[pltanton.dev]
+]
 
 = Key technologies
 
-#row[I][Go, Java/Kotlin/Spring, Postgres, Kafka, ClickHouse, Linux, Docker, Git]
-#row[II][AWS, K8S, Nix (NixOS), LaTeX, JS/TS]
-#row[III][Ruby, Python, Bash, C++, C, Lua, Haskell]
+#row[Backend][Go, Kotlin, Java, Spring, Postgres, Kafka, ClickHouse]
+#row[Infra][Kubernetes, Docker, AWS, Linux, Nix, OpenTelemetry]
 
 = Experience
 
@@ -118,7 +111,7 @@
 ]
 
 #job(compact: true)[2020--2021][Intellectokids][Remote][Software engineer][
-  Backend and AWS infrastructure for a kids education platform (Go, Kotlin, AWS).
+  Backend and AWS infrastructure for a kids education platform [Go, Kotlin, AWS].
 ]
 
 #job[2018--2020][DSX Technologies][St. Petersburg, Russia][Software engineer][
@@ -136,17 +129,16 @@
   Developing infrastructure components for build registration
   system and workflow processes.
 
-  - *Releng* [Kotlin, Java, Python, Docker, Jira, TeamCity]: support and development of automatic release registration system
+  - *Releng* [Kotlin, Java, Python, Docker, Jira, TeamCity]. Support and development of automatic release registration system
     (build registration, release/upgrade notes reports, Jira plugin,
     CI support with TeamCity).
 
-  - *DMS* [Kotlin, Docker, Spring, React.js]: support and full stack development of distribution management system. The system stores and distributes
+  - *DMS* [Kotlin, Docker, Spring, React.js]. Support and full stack development of distribution management system. The system stores and distributes
     business-specific product builds with their release/upgrade notes.
 ]
 
 #job[2016--2017][T-Systems RUS][St. Petersburg, Russia][Intern][
-  Full stack development of web micro-services mostly based on Ruby on Rails framework and PL/SQL.
-  Java development. Technologies: PL/SQL, Oracle, Ruby on Rails, MySQL, Sinatra, CoffeeScript.
+  Full stack development of web microservices [Ruby on Rails, Java, Oracle PL/SQL, MySQL].
 ]
 
 = Projects
@@ -176,7 +168,7 @@
   Chair of Advanced Mathematics.
 ]
 
-#section[Languages][Russian · English · Greek]
+#section[Languages][Russian (native) · English (C1) · Greek (B1)]
 
 #v(1fr)
 #align(center, text(size: 8pt, fill: muted, datetime.today().display("[month repr:long] [year]")))
